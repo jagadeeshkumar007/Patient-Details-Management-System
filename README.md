@@ -1,4 +1,4 @@
-Roger
+
 
 # Patient Details Management System
 
@@ -23,7 +23,7 @@ To set up the Patient Details Management System locally, follow these steps:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/jagadeeshkumar007/Roger.git
+   git clone https://github.com/jagadeeshkumar007/Patient-Details-Management-System.git
 2. Install the required dependencies:
    ```shell
    pip install -r requirements.txt
@@ -33,7 +33,3 @@ To set up the Patient Details Management System locally, follow these steps:
 4. Start the Django development server:
    ```shell
    python manage.py runserver
-
- 
-
-
