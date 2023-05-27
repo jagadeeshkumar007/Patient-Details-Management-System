@@ -1,0 +1,16 @@
+<!--{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1>hello world</h1>-->
+{% for i in features %}
+<h1>{{i.name}}</h1>
+<h2>{{i.details}}</h2>
+{% endfor %}
+<h2>{{user}}</h2>
+<a href="logout">logout</a>
+<!--<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="login">
+</form>-->

@@ -1,0 +1,67 @@
+<div class="pd">
+    <h1 style="font-family: 'Montserrat', sans-serif; border-radius: 15px; background-color: #fff; padding: 5px;">   PATIENT'S DETAILS</h1>
+    
+    {% for i in lst reversed %}
+    
+    <table >
+        <th>
+           <td><h3>Date:</h3><h5>{{i.dat}}</h5></td>
+            <td><h3>Disease:</h3><h5>{{i.disease}}</h5></td>
+            <td><h3>Diagnosis:</h3><h5>{{i.diag}}</td>
+            <td><h3>prescription:</h3><h5>{{i.prec}}</td>
+            <td><h3>Remarks:</h3><h5>{{i.rem}}</td>
+            <td><h3>image url:</h3><h5><a href="">view prvious reports</a></td>
+                
+                
+        </th>
+    </table>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        table{
+            border:0;
+            align-items: center;
+            width: 1200px;
+            height: 150px;
+            margin-bottom: 50px;
+            border-radius: 15px;
+            background-color: rgb(146, 240, 130);
+            padding: 20px;
+        }
+        body{
+            background: linear-gradient(90deg, rgb(165, 234, 245), rgb(163, 238, 240));
+        }
+        table td{
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #fff;
+            border-style: none;
+        }
+        table td:hover{
+            padding:5px;
+            transition: 0.6s;
+        }
+        table h3{
+            font-family:'Kanit' ;
+        }
+        table h5{
+            font-family: 'Montserrat', sans-serif;
+        }
+        th{
+            display: flex;
+            justify-content: space-around;
+        }
+        .pd
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        td{
+            max-width: 100px;
+            border: solid 1px;
+        }
+    
+    </style>
+    {% endfor%}
+    </div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background:#fff;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .uploadcss {
+            background-color: rgb(194, 247, 246);
+            position: relative;
+            color: black;
+            height: 700px;
+            width: 450px;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #563790;
+            margin-left: 100px;
+        }
+        input
+        {
+            width: 220px;
+            border-radius: 18px;
+            height: 30px;
+        }
+        #button
+        {
+           margin-top: 20px; 
+           width: 80px;
+           margin-left: 100px;
+           background-color: white;
+           color: black;
+        }
+        #ta{
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="uploadcss">
+        <form class="forms" method="POST" action="upload">
+            {% csrf_token %}
+            <p>Enter Date:</p>
+            <input type="text" name="date" placeholder="date-time" id="date">
+            <p>Enter disease:</p>
+            <input type="text" name="disease" placeholder="disease" >
+            <p>Enter diagnosis:</p>
+            <input type="text" name="diag" placeholder="diagnosis" >
+            <p>Enter precription:</p>
+            <textarea type="text" name="prec" placeholder="prescription" rows="3" cols="30"></textarea>
+            <p>Enter remarks:</p>
+            <textarea name="remarks" placeholder="remarks" id="ta" rows="3" cols="30"></textarea>
+            <p>Enter AdharNumber:</p>
+            <input type="text" name="adh" placeholder="Adhar Number">
+            <p>image Url:</p>
+            <input type="text" name="urlf" placeholder="upload image">  <br>
+            <input type="submit" value="upload" id="button">
+        </form>
+    </div>
+    <div><img src="https://tse4.mm.bing.net/th?id=OIP.TW4gmyJnshqWCkKCw2K7bQHaHa&pid=Api&P=0" height="700" width="" ></div>
+</body>
+
+</html>
